@@ -67,7 +67,7 @@ colorscheme jellybeans
 highlight ColorColumn ctermbg=234
 set fillchars+=vert:│
 set fillchars+=stlnc:-
-set listchars=tab:>-,trail:~,extends:>,precedes:<
+set listchars=eol:¬,tab:>→,trail:·,extends:>,precedes:<,space:·
 
 " Powerline fonts for airline.
 let g:airline_powerline_fonts = 1
