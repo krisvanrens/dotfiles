@@ -83,7 +83,6 @@ let g:airline_powerline_fonts = 1
 " Strip whitespace command.
 nnoremap <leader>sw :%s/\s\+$//<cr>:let @/=''<CR>
 command! Stripwhitespace :%s/\s\+$//
-command! Whitespacestrip :%s/\s\+$//
 
-" Remove trailing spaces at write time.                                                                                 
+" Remove trailing spaces at write time.
 autocmd BufWritePre * %s/\s\+$//e
