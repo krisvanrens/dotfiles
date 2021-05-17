@@ -63,11 +63,19 @@ set undodir=~/.vim/undodir
 
 " Color and character setup.
 set background=dark
-colorscheme jellybeans
-highlight ColorColumn ctermbg=234
 set fillchars+=vert:│
 set fillchars+=stlnc:-
 set listchars=eol:¬,tab:>→,trail:·,extends:>,precedes:<,space:·
+let g:jellybeans_overrides = { 'background': { 'ctermbg': 'none', '256ctermbg': 'none' } }
+if has('gui_running')
+  if has('termguicolors') && &termguicolors
+    let g:jellybeans_overrides['background']['guibg'] = 'none'
+  endif
+  set guifont=FiraCode\ NF\ Regular\ 11
+endif
+colorscheme jellybeans
+highlight ColorColumn ctermbg=234
+highlight ColorColumn guibg=Grey11
 
 " Powerline fonts for airline.
 let g:airline_powerline_fonts = 1
@@ -79,8 +87,3 @@ command! Whitespacestrip :%s/\s\+$//
 
 " Remove trailing spaces at write time.                                                                                 
 autocmd BufWritePre * %s/\s\+$//e
-
-if has('gui_running')
-  highlight ColorColumn guibg=Grey11
-  set guifont=FiraCode\ NF\ Regular\ 11
-endif
