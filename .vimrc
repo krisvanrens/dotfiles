@@ -72,10 +72,13 @@ set listchars=eol:¬,tab:>→,trail:·,extends:>,precedes:<,space:·
 " Powerline fonts for airline.
 let g:airline_powerline_fonts = 1
 
-" Strip whitespace.
+" Strip whitespace command.
 nnoremap <leader>sw :%s/\s\+$//<cr>:let @/=''<CR>
 command! Stripwhitespace :%s/\s\+$//
 command! Whitespacestrip :%s/\s\+$//
+
+" Remove trailing spaces at write time.                                                                                 
+autocmd BufWritePre * %s/\s\+$//e
 
 if has('gui_running')
   highlight ColorColumn guibg=Grey11
