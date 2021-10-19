@@ -51,6 +51,7 @@ set smarttab
 set tabstop=2
 set title
 set wrap
+set encoding=utf-8
 
 syntax on
 
