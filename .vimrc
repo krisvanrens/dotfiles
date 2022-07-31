@@ -87,3 +87,5 @@ command! Stripwhitespace :%s/\s\+$//
 
 " Remove trailing spaces at write time.
 autocmd BufWritePre * %s/\s\+$//e
+
+let g:NERDTreeWinSize=60
