@@ -89,3 +89,6 @@ command! Stripwhitespace :%s/\s\+$//
 autocmd BufWritePre * %s/\s\+$//e
 
 let g:NERDTreeWinSize=60
+
+let g:syntastic_cpp_compiler = "g++"
+let g:syntastic_cpp_compiler_options = "-std=c++20 -Wall -Wextra"
