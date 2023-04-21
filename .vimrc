@@ -92,3 +92,8 @@ let g:NERDTreeWinSize=60
 
 let g:syntastic_cpp_compiler = "g++"
 let g:syntastic_cpp_compiler_options = "-std=c++20 -Wall -Wextra"
+
+augroup nexus_ft
+  au!
+  autocmd BufNewFile,BufRead *.nxs set syntax=rust
+augroup END
