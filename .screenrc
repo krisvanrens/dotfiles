@@ -92,3 +92,5 @@ caption always           "%?%F%{= Kk}%:%{=u kR}%?  %h %-024=%{+b} %C%a %D %d %M 
 #                          background and [d]efault foreground colors, with no
 #                          ('= ') other effects.
 hardstatus alwayslastline "%{= kR} %-Lw%{=b Kk} %n%f %t %{-}%+Lw %=%{= dd}"
+
+shell "/usr/bin/fish"
