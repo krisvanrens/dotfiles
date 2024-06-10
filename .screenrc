@@ -6,6 +6,9 @@ defscrollback 100000
 
 backtick 1 15 15 awk 'NR==1 {p=substr(sprintf("%3.2f", ($2+$3)/($2+$3+$4+$5)*100),0,4); printf "%g", p;}' < /proc/stat
 
+term screen-256color
+truecolor on
+
 # don't use the hardstatus line for system messages, use reverse video instead
 # (we'll be using it for the list of tab windows - see hardstatus alwayslastline
 # below)

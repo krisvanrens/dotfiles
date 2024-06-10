@@ -25,6 +25,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-ctrlspace/vim-ctrlspace'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'kergoth/vim-bitbake'
 
 " Vundle-related setup -- required..
 call vundle#end()
