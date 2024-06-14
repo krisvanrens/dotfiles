@@ -9,6 +9,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'derekwyatt/vim-fswitch'
 Plugin 'preservim/nerdtree'
 Plugin 'rafi/awesome-vim-colorschemes'
+Plugin 'rust-lang/rust.vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -90,10 +91,12 @@ command! Stripwhitespace :%s/\s\+$//
 " Remove trailing spaces at write time.
 autocmd BufWritePre * %s/\s\+$//e
 
-let g:NERDTreeWinSize=60
+let g:NERDTreeWinSize=48
 
 let g:syntastic_cpp_compiler = "g++"
 let g:syntastic_cpp_compiler_options = "-std=c++20 -Wall -Wextra"
+
+let g:rustfmt_autosave = 1
 
 augroup nexus_ft
   au!
