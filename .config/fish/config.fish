@@ -6,4 +6,7 @@ fish_add_path -g ~/.local/bin
 
 set -x BAT_THEME 'base16'
 set -x GIT_EXTERNAL_DIFF difft
+
 source "$HOME/.cargo/env.fish"
+
+alias bat="batcat"
