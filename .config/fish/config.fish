@@ -10,3 +10,6 @@ set -x GIT_EXTERNAL_DIFF difft
 source "$HOME/.cargo/env.fish"
 
 alias bat="batcat"
+
+alias devup="devcontainer up --workspace-folder . --mount type=bind,source=$HOME/.bashrc,target=/home/guest/.bashrc"
+alias devex="devcontainer exec --workspace-folder . /bin/bash"
